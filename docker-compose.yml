@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    port:
+    ports:
       - "3000:3000"
     environment:
       TZ: "Asia/Seoul"
