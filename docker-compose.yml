@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  test-react:
+    container_name: my-react
+    build:
+      context: .
+      dockerfile: Dockerfile
+    port:
+      - "3000:3000"
+    environment:
+      TZ: "Asia/Seoul"
