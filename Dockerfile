@@ -1,6 +1,6 @@
 FROM node:lts as dependencies
 WORKDIR /app
-COPY package.josn ./
+COPY package.json ./
 RUN yarn install
 
 FROM node:lts as builder
